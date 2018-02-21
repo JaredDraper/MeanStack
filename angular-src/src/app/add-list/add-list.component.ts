@@ -18,7 +18,6 @@ export class AddListComponent implements OnInit {
   		category:'',
   		description:'',
   		_id:''
-
   	}
   }
 
@@ -28,7 +27,8 @@ export class AddListComponent implements OnInit {
   		response=> {
   			
   			if(response.success== true)
-  				this.addList.emit(this.newList);
+  				this.addList.emit();
+          this.ngOnInit();
   		},
 	);
 

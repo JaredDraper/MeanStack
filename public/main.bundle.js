@@ -1,4 +1,4 @@
-webpackJsonp([1,4],{
+webpackJsonp([1,5],{
 
 /***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,7 +6,7 @@ webpackJsonp([1,4],{
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(627);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -54,7 +54,7 @@ var ListService = (function () {
 
 /***/ }),
 
-/***/ 345:
+/***/ 348:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -63,20 +63,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 345;
+webpackEmptyContext.id = 348;
 
 
 /***/ }),
 
-/***/ 346:
+/***/ 349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(439);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(457);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(461);
 
 
 
@@ -89,7 +89,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 453:
+/***/ 459:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -125,7 +125,8 @@ var AddListComponent = (function () {
         console.log(this.newList.category);
         this.listServ.addList(this.newList).subscribe(function (response) {
             if (response.success == true)
-                _this.addList.emit(_this.newList);
+                _this.addList.emit();
+            _this.ngOnInit();
         });
     };
     __decorate([
@@ -135,8 +136,8 @@ var AddListComponent = (function () {
     AddListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-add-list',
-            template: __webpack_require__(615),
-            styles: [__webpack_require__(612)]
+            template: __webpack_require__(623),
+            styles: [__webpack_require__(620)]
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_list_service__["a" /* ListService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_list_service__["a" /* ListService */]) === 'function' && _b) || Object])
     ], AddListComponent);
@@ -147,7 +148,7 @@ var AddListComponent = (function () {
 
 /***/ }),
 
-/***/ 454:
+/***/ 460:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -170,8 +171,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(616),
-            styles: [__webpack_require__(613)]
+            template: __webpack_require__(624),
+            styles: [__webpack_require__(621)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -181,17 +182,17 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 455:
+/***/ 461:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(424);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(454);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__add_list_add_list_component__ = __webpack_require__(453);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__view_list_view_list_component__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__add_list_add_list_component__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__view_list_view_list_component__ = __webpack_require__(462);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_list_service__ = __webpack_require__(200);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -240,7 +241,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 456:
+/***/ 462:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -279,14 +280,14 @@ var ViewListComponent = (function () {
         this.listServ.deleteList(list._id).subscribe(function (response) { return _this.lists = _this.lists.filter(function (lists) { return lists !== list; }); });
     };
     //onAddList will be invoked when the child component emits an event
-    ViewListComponent.prototype.onAddList = function (newList) {
-        this.lists = this.lists.concat(newList);
+    ViewListComponent.prototype.onAddList = function () {
+        this.loadLists();
     };
     ViewListComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-view-list',
-            template: __webpack_require__(617),
-            styles: [__webpack_require__(614)]
+            template: __webpack_require__(625),
+            styles: [__webpack_require__(622)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_list_service__["a" /* ListService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_list_service__["a" /* ListService */]) === 'function' && _a) || Object])
     ], ViewListComponent);
@@ -297,7 +298,7 @@ var ViewListComponent = (function () {
 
 /***/ }),
 
-/***/ 457:
+/***/ 463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -313,55 +314,55 @@ var environment = {
 
 /***/ }),
 
-/***/ 612:
+/***/ 620:
 /***/ (function(module, exports) {
 
 module.exports = ".push-button-down {\r\n\tmargin-top: 5%;\r\n}"
 
 /***/ }),
 
-/***/ 613:
+/***/ 621:
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ 614:
+/***/ 622:
 /***/ (function(module, exports) {
 
 module.exports = ".btn-danger {\r\n\tcolor: #eeeeee;\r\n\r\n}\r\n\r\n.align-center {\r\n\ttext-align: center;\r\n}"
 
 /***/ }),
 
-/***/ 615:
+/***/ 623:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n    <form (ngSubmit)=\"onSubmit()\">\n      <div>\n        <label for=\"title\">Title</label>\n        <input type=\"text\" [(ngModel)]=\"newList.title\" name=\"title\" required>\n      </div>\n\n      <div>\n        <label for=\"category\">Select Category</label>\n        <select [(ngModel)]=\"newList.category\" name = \"category\" >\n\n            <option value=\"High\">High Priority</option>\n            <option value=\"Medium\">Medium Priority</option>\n            <option value=\"Low\">Low Prioirty</option>\n\n        </select>\n      </div>\n\n      <div>\n        <label for=\"description\">description</label>\n        <input type=\"text\" [(ngModel)]=\"newList.description\" name=\"description\" required>\n      </div>\n\n      <button type=\"submit\">Submit</button>\n\n    </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  \n    <form (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-row\">\n      <div  class=\"form-group col-md-4\">\n        <label for=\"title\"><h4>Title</h4></label>\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"newList.title\" name=\"title\" required>\n      </div>\n \n      <div class=\"form-group col-md-2\">\n        <label for=\"category\"><h4>Category</h4></label>\n        <select class=\"form-control\" name=\"cat\" [(ngModel)]=\"newList.category\" >\n          \n        <option value=\"High\">High Priority</option>\n        <option value=\"Medium\">Medium Priority</option>\n        <option value=\"Low\">Low Prioirty</option>\n      \n    </select>\n      </div>\n\n      <div class=\"form-group col-md-5\">\n        <label for=\"description\"><h4>Description</h4></label>\n        <input type=\"text\" class=\"form-control\" [(ngModel)]=\"newList.description\" name=\"description\" required>\n      </div>\n      </div>\n \n  \n      <button type=\"submit\" class=\"push-button-down btn btn-success\">Submit</button>\n  \n    </form>\n</div>"
 
 /***/ }),
 
-/***/ 616:
+/***/ 624:
 /***/ (function(module, exports) {
 
 module.exports = "<!--The whole content below can be removed with the new code.-->\n<div style=\"text-align:center\">\n  <h1>\n     {{title}}!\n  </h1>\n   \n  <app-view-list> </app-view-list>\n\n  \n</div>\n"
 
 /***/ }),
 
-/***/ 617:
+/***/ 625:
 /***/ (function(module, exports) {
 
 module.exports = "  <h2> Awesome Bucketlist App </h2>\n\n   <!-- Table starts here -->\n  <table id=\"table\" class=\"table table-hover table-mc-light-blue\">\n      <thead>\n        <tr class=\"align-center\">\n          <th class=\"align-center\">Priority Level</th>\n          <th class=\"align-center\">Title</th>\n          <th class=\"align-center\"> Description</th>\n          <th class=\"align-center\"> Delete </th>\n          \n        </tr>\n      </thead>\n      <tbody>\n      \t<tr *ngFor=\"let list of lists\">\n      \t  <td>{{list.category}}</td>\n          <td>{{list.title}}</td>\n          <td>{{list.description}}</td>\n          <td> <button type=\"button\" class=\"btn btn-danger\" (click)=\"deleteList(list); $event.stopPropagation();\">Delete</button></td>\n\n        </tr>\n      </tbody>\n   </table>\n\n\n <app-add-list (addList)=\"onAddList($event)\"> </app-add-list>\n"
 
 /***/ }),
 
-/***/ 635:
+/***/ 642:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(346);
+module.exports = __webpack_require__(349);
 
 
 /***/ })
 
-},[635]);
+},[642]);
 //# sourceMappingURL=main.bundle.map

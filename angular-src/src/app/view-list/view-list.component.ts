@@ -36,7 +36,7 @@ export class ViewListComponent implements OnInit {
 	}
 
   //onAddList will be invoked when the child component emits an event
-  public onAddList(newList) {
-    this.lists = this.lists.concat(newList);
+  public onAddList() {
+    this.loadLists();
   }
 }
