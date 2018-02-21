@@ -7,11 +7,16 @@ const mongoose = require('mongoose');
 const config = require('./config/database');
 const bucketlist = require('./controllers/bucketlist');
 
+var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 // Connect mongoose to our database
-mongoose.connect(config.database);
+if(env === 'development'){
+	mongoose.connect(config.database);
+}else{
+mongoose.connect('mongodb://jdraper:crf450r3@ds245548.mlab.com:45548/jaredsbucketlist');
+}
 
 //Declaring Port
-const port = 3000;
+const port = process.env.PORT = process.env.PORT || 3000;
 
 //Initialize our app variable
 const app = express();

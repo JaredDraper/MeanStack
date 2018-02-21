@@ -12,3 +12,6 @@ navigate to MeanExample\angular-src
 ng-serve
 
 deployment files are stored in public folder.
+
+Production
+set NODE_ENV=production
